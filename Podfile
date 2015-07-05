@@ -4,7 +4,6 @@ use_frameworks!
 
 target 'Gmaps' do
   pod 'GoogleMaps'
-  pod 'ReactiveCocoa', '3.0-beta.6'
   pod 'SwiftyJSON'
 end
 

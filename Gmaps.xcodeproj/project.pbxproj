@@ -9,15 +9,11 @@
 /* Begin PBXBuildFile section */
 		2B3BCAE1E98438A198B132B3 /* Pods_Gmaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 294C990A18CCBDFEEE4089F2 /* Pods_Gmaps.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		5B18C5A51B4760FF00A64175 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B18C5A41B4760FF00A64175 /* MapViewController.swift */; };
-		5B2E71FE1B482ECC00D184EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E71FD1B482ECC00D184EF /* ViewController.swift */; };
-		5B2E72061B48365200D184EF /* GooglePlacesAutocomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2E72051B48365200D184EF /* GooglePlacesAutocomplete.swift */; };
-		5B2E72081B48369600D184EF /* GooglePlacesAutocomplete.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B2E72071B48369600D184EF /* GooglePlacesAutocomplete.xib */; };
 		5B30FD001B474819005E5E2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B30FCFF1B474819005E5E2D /* AppDelegate.swift */; };
 		5B30FD051B474819005E5E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B30FD031B474819005E5E2D /* Main.storyboard */; };
 		5B30FD071B474819005E5E2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B30FD061B474819005E5E2D /* Images.xcassets */; };
 		5B30FD0A1B474819005E5E2D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B30FD081B474819005E5E2D /* LaunchScreen.xib */; };
 		5B30FD161B474819005E5E2D /* GmapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B30FD151B474819005E5E2D /* GmapsTests.swift */; };
-		5BE8E3D61B47855700C57BE0 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE8E3D51B47855700C57BE0 /* UIViewExtension.swift */; };
 		5BF07C891B49845E007F2C7E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF07C881B49845E007F2C7E /* Request.swift */; };
 		5BFB98EA1B48674900C17D53 /* PlaceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB98E91B48674900C17D53 /* PlaceRequest.swift */; };
 		5BFB98ED1B489A6E00C17D53 /* GoogleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB98EC1B489A6E00C17D53 /* GoogleTableViewController.swift */; };
@@ -36,9 +32,6 @@
 /* Begin PBXFileReference section */
 		294C990A18CCBDFEEE4089F2 /* Pods_Gmaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gmaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B18C5A41B4760FF00A64175 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
-		5B2E71FD1B482ECC00D184EF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B2E72051B48365200D184EF /* GooglePlacesAutocomplete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesAutocomplete.swift; sourceTree = "<group>"; };
-		5B2E72071B48369600D184EF /* GooglePlacesAutocomplete.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GooglePlacesAutocomplete.xib; sourceTree = "<group>"; };
 		5B30FCFA1B474819005E5E2D /* Gmaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gmaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B30FCFE1B474819005E5E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B30FCFF1B474819005E5E2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +41,6 @@
 		5B30FD0F1B474819005E5E2D /* GmapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GmapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B30FD141B474819005E5E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B30FD151B474819005E5E2D /* GmapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmapsTests.swift; sourceTree = "<group>"; };
-		5BE8E3D51B47855700C57BE0 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5BF07C881B49845E007F2C7E /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		5BFB98E91B48674900C17D53 /* PlaceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceRequest.swift; sourceTree = "<group>"; };
 		5BFB98EC1B489A6E00C17D53 /* GoogleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleTableViewController.swift; sourceTree = "<group>"; };
@@ -81,17 +73,6 @@
 				294C990A18CCBDFEEE4089F2 /* Pods_Gmaps.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5B2E71FC1B482E9100D184EF /* GooglePlacesAutocomplete */ = {
-			isa = PBXGroup;
-			children = (
-				5BE8E3D51B47855700C57BE0 /* UIViewExtension.swift */,
-				5B2E71FD1B482ECC00D184EF /* ViewController.swift */,
-				5B2E72051B48365200D184EF /* GooglePlacesAutocomplete.swift */,
-				5B2E72071B48369600D184EF /* GooglePlacesAutocomplete.xib */,
-			);
-			name = GooglePlacesAutocomplete;
 			sourceTree = "<group>";
 		};
 		5B2E72091B4840A000D184EF /* GoogleMaps */ = {
@@ -129,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				5B2E72091B4840A000D184EF /* GoogleMaps */,
-				5B2E71FC1B482E9100D184EF /* GooglePlacesAutocomplete */,
 				5B30FCFF1B474819005E5E2D /* AppDelegate.swift */,
 				5B30FD031B474819005E5E2D /* Main.storyboard */,
 				5B30FD061B474819005E5E2D /* Images.xcassets */,
@@ -256,7 +236,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B2E72081B48369600D184EF /* GooglePlacesAutocomplete.xib in Resources */,
 				5B30FD051B474819005E5E2D /* Main.storyboard in Resources */,
 				5B30FD0A1B474819005E5E2D /* LaunchScreen.xib in Resources */,
 				5B30FD071B474819005E5E2D /* Images.xcassets in Resources */,
@@ -325,11 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B2E71FE1B482ECC00D184EF /* ViewController.swift in Sources */,
 				5BF07C891B49845E007F2C7E /* Request.swift in Sources */,
-				5B2E72061B48365200D184EF /* GooglePlacesAutocomplete.swift in Sources */,
 				5BFB98ED1B489A6E00C17D53 /* GoogleTableViewController.swift in Sources */,
-				5BE8E3D61B47855700C57BE0 /* UIViewExtension.swift in Sources */,
 				5BFB98EA1B48674900C17D53 /* PlaceRequest.swift in Sources */,
 				5B30FD001B474819005E5E2D /* AppDelegate.swift in Sources */,
 				5B18C5A51B4760FF00A64175 /* MapViewController.swift in Sources */,
