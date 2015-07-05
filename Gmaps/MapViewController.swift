@@ -88,39 +88,39 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
         }
     }
     
-    func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
-        mapCenterPinImage.fadeOut(0.25)
-        return false
-    }
-    
-    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
-        if let location = locations.first as? CLLocation {
-            // 6
-            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
-            
-            // 7
-            locationManager.stopUpdatingLocation()
-        }
-    }
-
-    func didTapMyLocationButtonForMapView(mapView: GMSMapView!) -> Bool {
-        mapCenterPinImage.fadeIn(0.25)
-        mapView.selectedMarker = nil
-        return false
-    }
-
-    func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
-        reverseGeocodeCoordinate(position.target)
-    }
-    
-    func reverseGeocodeCoordinate(coordinate: CLLocationCoordinate2D) {
-        let geocoder = GMSGeocoder()
-        geocoder.reverseGeocodeCoordinate(coordinate) { response , error in
-            UIView.animateWithDuration(0.25) {
-                self.view.layoutIfNeeded()
-                }
-            }
-        }
+//    func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
+//        mapCenterPinImage.fadeOut(0.25)
+//        return false
+//    }
+//    
+//    func locationManager(manager: CLLocationManager!, didUpdateLocations locations: [AnyObject]!) {
+//        if let location = locations.first as? CLLocation {
+//            // 6
+//            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+//            
+//            // 7
+//            locationManager.stopUpdatingLocation()
+//        }
+//    }
+//
+//    func didTapMyLocationButtonForMapView(mapView: GMSMapView!) -> Bool {
+//        mapCenterPinImage.fadeIn(0.25)
+//        mapView.selectedMarker = nil
+//        return false
+//    }
+//
+//    func mapView(mapView: GMSMapView!, idleAtCameraPosition position: GMSCameraPosition!) {
+//        reverseGeocodeCoordinate(position.target)
+//    }
+//    
+//    func reverseGeocodeCoordinate(coordinate: CLLocationCoordinate2D) {
+//        let geocoder = GMSGeocoder()
+//        geocoder.reverseGeocodeCoordinate(coordinate) { response , error in
+//            UIView.animateWithDuration(0.25) {
+//                self.view.layoutIfNeeded()
+//                }
+//            }
+//        }
 
 
     override func viewDidLoad() {
