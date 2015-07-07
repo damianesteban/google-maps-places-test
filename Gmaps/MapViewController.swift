@@ -45,10 +45,17 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     }
     
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
         let currentLocation = locationManager.location.coordinate
         let query = searchBar.text
+        query.stringByReplacingOccurrencesOfString(" ", withString: "+")
+        query.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
         requestPlacesNearCoordinate(currentLocation, radius: mapRadius, query: query)
     }
+    
+//    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+//        searchBar.resignFirstResponder()
+//    }
     
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
             locationManager.startUpdatingLocation()
@@ -107,7 +114,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     
     func requestPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double, query: String) {
         
-        var urlString = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=\(query.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding))bars&location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&key=AIzaSyA8Csg82zsqa6msI0czCz8FjiXemYFaZFw"
+        var urlString = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=\(query)&location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&key=AIzaSyA8Csg82zsqa6msI0czCz8FjiXemYFaZFw"
         
         if let url = NSURL(string: urlString) {
             if let data = NSData(contentsOfURL: url, options: .allZeros, error: nil) {
