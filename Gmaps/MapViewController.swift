@@ -11,18 +11,24 @@ import GoogleMaps
 import CoreLocation
 import SwiftyJSON
 
-class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate, UISearchBarDelegate {
+class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate,
+    UISearchBarDelegate {
     
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var searchBar: UISearchBar!
 
     @IBOutlet weak var addressLabel: UILabel!
     
-//    @IBAction func refreshPlaces(sender: AnyObject) {
-//        requestPlaces(mapView.camera.target)
-//    }
-//    
+    @IBAction func refreshPlaces(sender: AnyObject) {
+        if let currentSearch = currentSearch {
+            mapView.clear()
+            requestPlacesNearCoordinate(mapView.camera.target, radius: mapRadius,
+                query: currentSearch)
+        }
+    }
+    
     let locationManager = CLLocationManager()
+    var currentSearch: String?
 
 //    let request = Request()
     
@@ -47,10 +53,10 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         let currentLocation = locationManager.location.coordinate
-        let query = searchBar.text
-        query.stringByReplacingOccurrencesOfString(" ", withString: "+")
-        query.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
-        requestPlacesNearCoordinate(currentLocation, radius: mapRadius, query: query)
+        currentSearch = searchBar.text
+        currentSearch = currentSearch!.stringByReplacingOccurrencesOfString(" ", withString: "+")
+        currentSearch!.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
+        requestPlacesNearCoordinate(currentLocation, radius: mapRadius, query: currentSearch!)
     }
     
 //    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
@@ -107,10 +113,10 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
         }
     }
 
-//    func requestPlaces(coordinate: CLLocationCoordinate2D) {
-//        mapView.clear()
-//        requestPlacesNearCoordinate(coordinate, radius: mapRadius, query: searchBar.text)
-//    }
+    func requestPlaces(coordinate: CLLocationCoordinate2D) {
+        mapView.clear()
+        requestPlacesNearCoordinate(coordinate, radius: mapRadius, query: currentSearch!)
+    }
     
     func requestPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double, query: String) {
         
