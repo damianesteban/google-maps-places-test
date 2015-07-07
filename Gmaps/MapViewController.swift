@@ -116,6 +116,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
             var placeMarker = GMSMarker()
             placeMarker.position = place.coordinate
             placeMarker.title = place.name
+            placeMarker.snippet = place.address
             placeMarker.map = mapView
             
         }
