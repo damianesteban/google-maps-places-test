@@ -31,8 +31,9 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="prominent" translatesAutoresizingMaskIntoConstraints="NO" id="I56-Wd-elF">
+                            <searchBar contentMode="redraw" searchBarStyle="prominent" translatesAutoresizingMaskIntoConstraints="NO" id="I56-Wd-elF">
                                 <rect key="frame" x="0.0" y="51" width="600" height="44"/>
+                                <color key="barTintColor" red="0.55686277151107788" green="0.26666668057441711" blue="0.67843139171600342" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="857-6t-uH4">

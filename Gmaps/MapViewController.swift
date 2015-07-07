@@ -100,7 +100,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
             mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
             
             locationManager.stopUpdatingLocation()
-//            requestPlaces(location.coordinate)
+            // requestPlaces(location.coordinate)
         }
     }
     
@@ -119,7 +119,6 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     }
     
     func requestPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double, query: String) {
-        
         var urlString = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=\(query)&location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&key=AIzaSyA8Csg82zsqa6msI0czCz8FjiXemYFaZFw"
         
         if let url = NSURL(string: urlString) {
@@ -129,7 +128,6 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
             }
         }
     }
-    
     
     func parseJSON(json: JSON){
         var placesArray = [Place]()
@@ -143,7 +141,6 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
             placesArray.append(place)
         }
         
-        
         for place in placesArray {
             println(place.name)
             println(place.address)
@@ -151,6 +148,10 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
             placeMarker.position = place.coordinate
             placeMarker.title = place.name
             placeMarker.snippet = place.address
+            placeMarker.appearAnimation = kGMSMarkerAnimationPop
+            placeMarker.flat = true
+            placeMarker.icon = GMSMarker.markerImageWithColor(UIColor(red:0.420, green:0.216, blue:0.510, alpha:1))
+            placeMarker.opacity = 0.80
             placeMarker.map = mapView
             
         }
