@@ -10,15 +10,17 @@ import Foundation
 import CoreLocation
 
 class Place {
-    var formatted_address: String
-    var geometry: String
-    var icon: String
     var name: String
+    var address: String
+    var latitude: CLLocationDegrees
+    var longitude: CLLocationDegrees
+    var coordinate: CLLocationCoordinate2D
     
-    init(json: NSDictionary) {
-        self.formatted_address = json["formatted_address"] as! String
-        self.geometry = json["geometry"] as! String
-        self.icon = json["icon"] as! String
-        self.name = json["name"] as! String
+    init(name: String, address: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees, coordinate: CLLocationCoordinate2D) {
+        self.name = name
+        self.address = address
+        self.latitude = latitude
+        self.longitude = longitude
+        self.coordinate = CLLocationCoordinate2DMake(latitude, longitude)
     }
 }

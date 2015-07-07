@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import CoreLocation
 
 class TestViewController: UIViewController {
 
@@ -19,7 +20,7 @@ class TestViewController: UIViewController {
             if let data = NSData(contentsOfURL: url, options: .allZeros, error: nil) {
                 let json = JSON(data: data)
                 parseJSON(json)
-                println(venueObjects)
+                println(placesArray)
             }
         }
     }
@@ -29,20 +30,22 @@ class TestViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    var places = [Place]()
+    var placesArray = [Place]()
     var venueObjects = [[String: String]]()
     
     func parseJSON(json: JSON) {
         for result in json["results"].arrayValue {
-            let address = result["formatted_address"].stringValue
-            let latitude = result["geometry"]["location"]["lat"].stringValue
-            let longitude = result["geometry"]["location"]["lng"].stringValue
-            let icon = result["icon"].stringValue
             let name = result["name"].stringValue
-            let jsonObject = ["address": address, "latitude": latitude, "longitude": longitude, "icon": icon, "name": name]
-            venueObjects.append(jsonObject)
+            let address = result["formatted_address"].stringValue
+            let latitude = result["geometry"]["location"]["lat"].doubleValue
+            let longitude = result["geometry"]["location"]["lng"].doubleValue
+            let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
+            let place = Place(name: name, address: address, latitude: latitude, longitude: longitude, coordinate: coordinate)
+            placesArray.append(place)
         }
     }
+    
+}
     /*
     // MARK: - Navigation
 
@@ -53,4 +56,4 @@ class TestViewController: UIViewController {
     }
     */
 
-}
+
