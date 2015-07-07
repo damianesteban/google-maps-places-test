@@ -14,8 +14,11 @@
 		5B30FD071B474819005E5E2D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B30FD061B474819005E5E2D /* Images.xcassets */; };
 		5B30FD0A1B474819005E5E2D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B30FD081B474819005E5E2D /* LaunchScreen.xib */; };
 		5B30FD161B474819005E5E2D /* GmapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B30FD151B474819005E5E2D /* GmapsTests.swift */; };
+		5B43803E1B4B4D3700708384 /* PlacePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B43803D1B4B4D3700708384 /* PlacePin.swift */; };
+		5B4380401B4B570F00708384 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B43803F1B4B570F00708384 /* Place.swift */; };
+		5B4380421B4B592E00708384 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4380411B4B592E00708384 /* TestViewController.swift */; };
 		5BF07C891B49845E007F2C7E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF07C881B49845E007F2C7E /* Request.swift */; };
-		5BFB98EA1B48674900C17D53 /* PlaceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB98E91B48674900C17D53 /* PlaceRequest.swift */; };
+		5BFB98EA1B48674900C17D53 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB98E91B48674900C17D53 /* GooglePlace.swift */; };
 		5BFB98ED1B489A6E00C17D53 /* GoogleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB98EC1B489A6E00C17D53 /* GoogleTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +44,12 @@
 		5B30FD0F1B474819005E5E2D /* GmapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GmapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B30FD141B474819005E5E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B30FD151B474819005E5E2D /* GmapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmapsTests.swift; sourceTree = "<group>"; };
+		5B43803C1B4B421A00708384 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		5B43803D1B4B4D3700708384 /* PlacePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacePin.swift; sourceTree = "<group>"; };
+		5B43803F1B4B570F00708384 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		5B4380411B4B592E00708384 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		5BF07C881B49845E007F2C7E /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		5BFB98E91B48674900C17D53 /* PlaceRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceRequest.swift; sourceTree = "<group>"; };
+		5BFB98E91B48674900C17D53 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		5BFB98EC1B489A6E00C17D53 /* GoogleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleTableViewController.swift; sourceTree = "<group>"; };
 		7F7C490F0D8D1498752EFC49 /* Pods-Gmaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gmaps.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gmaps/Pods-Gmaps.release.xcconfig"; sourceTree = "<group>"; };
 		A7DA6CB7C3CF76B360D2FE42 /* Pods-Gmaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gmaps.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gmaps/Pods-Gmaps.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,9 +86,12 @@
 			isa = PBXGroup;
 			children = (
 				5B18C5A41B4760FF00A64175 /* MapViewController.swift */,
-				5BFB98E91B48674900C17D53 /* PlaceRequest.swift */,
+				5BFB98E91B48674900C17D53 /* GooglePlace.swift */,
 				5BFB98EC1B489A6E00C17D53 /* GoogleTableViewController.swift */,
 				5BF07C881B49845E007F2C7E /* Request.swift */,
+				5B43803D1B4B4D3700708384 /* PlacePin.swift */,
+				5B43803F1B4B570F00708384 /* Place.swift */,
+				5B4380411B4B592E00708384 /* TestViewController.swift */,
 			);
 			name = GoogleMaps;
 			sourceTree = "<group>";
@@ -115,6 +125,7 @@
 				5B30FD061B474819005E5E2D /* Images.xcassets */,
 				5B30FD081B474819005E5E2D /* LaunchScreen.xib */,
 				5B30FCFD1B474819005E5E2D /* Supporting Files */,
+				5B43803C1B4B421A00708384 /* MyPlayground.playground */,
 			);
 			path = Gmaps;
 			sourceTree = "<group>";
@@ -305,9 +316,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF07C891B49845E007F2C7E /* Request.swift in Sources */,
+				5B43803E1B4B4D3700708384 /* PlacePin.swift in Sources */,
+				5B4380421B4B592E00708384 /* TestViewController.swift in Sources */,
 				5BFB98ED1B489A6E00C17D53 /* GoogleTableViewController.swift in Sources */,
-				5BFB98EA1B48674900C17D53 /* PlaceRequest.swift in Sources */,
+				5BFB98EA1B48674900C17D53 /* GooglePlace.swift in Sources */,
 				5B30FD001B474819005E5E2D /* AppDelegate.swift in Sources */,
+				5B4380401B4B570F00708384 /* Place.swift in Sources */,
 				5B18C5A51B4760FF00A64175 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

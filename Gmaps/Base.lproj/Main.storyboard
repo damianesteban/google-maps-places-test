@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xPo-8n-KvU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q2g-iV-eV6">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="OvE-5N-cLT">
-            <objects>
-                <viewController id="eLk-Mk-B94" customClass="ViewController" customModule="Gmaps" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="G1Y-eF-wNg"/>
-                        <viewControllerLayoutGuide type="bottom" id="o1h-r6-dB5"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="vdL-Of-Bkt">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qHK-Hq-kXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2407" y="484"/>
-        </scene>
         <!--Map View Controller-->
         <scene sceneID="noM-18-Eyd">
             <objects>
@@ -35,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J9k-UI-RkR" customClass="GMSMapView">
-                                <rect key="frame" x="0.0" y="64" width="600" height="493"/>
+                                <rect key="frame" x="0.0" y="95" width="600" height="462"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rv6-Oq-3WY">
@@ -44,41 +27,56 @@
                                     <barButtonItem systemItem="refresh" id="aOW-lX-WR1"/>
                                 </items>
                             </toolbar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="857-6t-uH4">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
-                                <color key="backgroundColor" red="0.82745099067687988" green="0.32941177487373352" blue="0.0" alpha="0.63" colorSpace="calibratedRGB"/>
-                            </view>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="I56-Wd-elF">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="51" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="857-6t-uH4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="51"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XM1-of-idP">
+                                        <rect key="frame" x="8" y="15" width="584" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.82745099067687988" green="0.32941177487373352" blue="0.0" alpha="0.63" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="XM1-of-idP" firstAttribute="leading" secondItem="857-6t-uH4" secondAttribute="leadingMargin" id="gSV-XM-nEt"/>
+                                    <constraint firstItem="XM1-of-idP" firstAttribute="trailing" secondItem="857-6t-uH4" secondAttribute="trailingMargin" id="gZV-VK-31U"/>
+                                    <constraint firstItem="XM1-of-idP" firstAttribute="top" secondItem="857-6t-uH4" secondAttribute="top" constant="15" id="lWH-0V-ODA"/>
+                                    <constraint firstItem="XM1-of-idP" firstAttribute="centerY" secondItem="857-6t-uH4" secondAttribute="centerY" id="nTN-W2-Tn2"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="857-6t-uH4" firstAttribute="top" secondItem="dRH-mg-1Nd" secondAttribute="top" id="2RB-Vh-BBG"/>
-                            <constraint firstItem="I56-Wd-elF" firstAttribute="top" secondItem="857-6t-uH4" secondAttribute="bottom" id="3fV-y4-uec"/>
-                            <constraint firstItem="Rv6-Oq-3WY" firstAttribute="leading" secondItem="J9k-UI-RkR" secondAttribute="leading" id="8J5-NP-MJ4"/>
-                            <constraint firstItem="857-6t-uH4" firstAttribute="leading" secondItem="I56-Wd-elF" secondAttribute="leading" id="8TC-VJ-Kdq"/>
-                            <constraint firstItem="Rv6-Oq-3WY" firstAttribute="bottom" secondItem="IpS-1z-myQ" secondAttribute="top" id="9v1-Nr-Kho"/>
-                            <constraint firstItem="J9k-UI-RkR" firstAttribute="leading" secondItem="I56-Wd-elF" secondAttribute="leading" id="Ci6-kh-bCt"/>
-                            <constraint firstItem="I56-Wd-elF" firstAttribute="top" secondItem="e21-qy-AdK" secondAttribute="bottom" id="FsT-qD-u5m"/>
-                            <constraint firstItem="I56-Wd-elF" firstAttribute="trailing" secondItem="J9k-UI-RkR" secondAttribute="trailing" id="Fti-xy-aAk"/>
-                            <constraint firstItem="J9k-UI-RkR" firstAttribute="top" secondItem="I56-Wd-elF" secondAttribute="bottom" id="JCM-u2-bY7"/>
-                            <constraint firstItem="857-6t-uH4" firstAttribute="trailing" secondItem="I56-Wd-elF" secondAttribute="trailing" id="Q3k-dq-cIT"/>
-                            <constraint firstItem="857-6t-uH4" firstAttribute="leading" secondItem="dRH-mg-1Nd" secondAttribute="leading" id="Rhn-H2-CTL"/>
-                            <constraint firstItem="Rv6-Oq-3WY" firstAttribute="trailing" secondItem="J9k-UI-RkR" secondAttribute="trailing" id="eXX-it-cvE"/>
-                            <constraint firstItem="IpS-1z-myQ" firstAttribute="top" secondItem="J9k-UI-RkR" secondAttribute="bottom" constant="43" id="pjl-5y-nNt"/>
-                            <constraint firstAttribute="trailing" secondItem="Rv6-Oq-3WY" secondAttribute="trailing" id="vE7-bG-As7"/>
+                            <constraint firstItem="Rv6-Oq-3WY" firstAttribute="bottom" secondItem="IpS-1z-myQ" secondAttribute="top" id="75R-Oi-bpC"/>
+                            <constraint firstItem="I56-Wd-elF" firstAttribute="trailing" secondItem="J9k-UI-RkR" secondAttribute="trailing" id="7Wh-AZ-kL8"/>
+                            <constraint firstItem="857-6t-uH4" firstAttribute="leading" secondItem="I56-Wd-elF" secondAttribute="leading" id="A8w-FZ-2Jf"/>
+                            <constraint firstItem="J9k-UI-RkR" firstAttribute="leading" secondItem="Rv6-Oq-3WY" secondAttribute="leading" id="AnY-d0-wzY"/>
+                            <constraint firstAttribute="trailing" secondItem="Rv6-Oq-3WY" secondAttribute="trailing" id="DyH-pk-Sdh"/>
+                            <constraint firstItem="I56-Wd-elF" firstAttribute="trailing" secondItem="857-6t-uH4" secondAttribute="trailing" id="E7g-SS-ouU"/>
+                            <constraint firstItem="J9k-UI-RkR" firstAttribute="leading" secondItem="I56-Wd-elF" secondAttribute="leading" id="KgA-fX-NWo"/>
+                            <constraint firstItem="J9k-UI-RkR" firstAttribute="trailing" secondItem="Rv6-Oq-3WY" secondAttribute="trailing" id="PkD-Z2-WCz"/>
+                            <constraint firstItem="J9k-UI-RkR" firstAttribute="top" secondItem="I56-Wd-elF" secondAttribute="bottom" id="QwG-2X-SgT"/>
+                            <constraint firstItem="I56-Wd-elF" firstAttribute="top" secondItem="dRH-mg-1Nd" secondAttribute="top" constant="51" id="So1-sZ-H3r"/>
+                            <constraint firstItem="IpS-1z-myQ" firstAttribute="top" secondItem="J9k-UI-RkR" secondAttribute="bottom" constant="43" id="XhH-VO-U9W"/>
+                            <constraint firstItem="857-6t-uH4" firstAttribute="top" secondItem="dRH-mg-1Nd" secondAttribute="top" id="bAP-G1-fuW"/>
+                            <constraint firstItem="I56-Wd-elF" firstAttribute="top" secondItem="857-6t-uH4" secondAttribute="bottom" id="cS4-dQ-aFK"/>
+                            <constraint firstItem="Rv6-Oq-3WY" firstAttribute="leading" secondItem="dRH-mg-1Nd" secondAttribute="leading" id="rg9-Dn-Qbr"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addressLabel" destination="XM1-of-idP" id="kxv-kA-D9Y"/>
                         <outlet property="mapView" destination="J9k-UI-RkR" id="5MQ-XR-wkO"/>
                         <outlet property="searchBar" destination="I56-Wd-elF" id="EA7-Ww-zwh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n1c-IT-Nui" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1244" y="498"/>
+            <point key="canvasLocation" x="770" y="523"/>
         </scene>
         <!--Google Table View Controller-->
         <scene sceneID="6qf-yl-eWY">
@@ -112,13 +110,13 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SL3-ob-OIM">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9uv-gm-dCF">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -140,7 +138,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yT5-jo-vES" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1870" y="498"/>
+            <point key="canvasLocation" x="1416" y="466"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="HJO-xo-swz">
+            <objects>
+                <viewController id="q2g-iV-eV6" customClass="TestViewController" customModule="Gmaps" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ypz-ja-9da"/>
+                        <viewControllerLayoutGuide type="bottom" id="p4r-xx-Jax"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EOb-xP-NJW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BTe-zr-JxR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2208" y="379"/>
         </scene>
     </scenes>
 </document>
