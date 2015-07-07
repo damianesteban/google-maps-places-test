@@ -11,28 +11,43 @@ import GoogleMaps
 import CoreLocation
 import SwiftyJSON
 
-class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate {
+class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate, UISearchBarDelegate {
     
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var searchBar: UISearchBar!
 
     @IBOutlet weak var addressLabel: UILabel!
     
-    @IBAction func refreshPlaces(sender: AnyObject) {
-        requestPlaces(mapView.camera.target)
-    }
+//    @IBAction func refreshPlaces(sender: AnyObject) {
+//        requestPlaces(mapView.camera.target)
+//    }
+//    
     let locationManager = CLLocationManager()
+
 //    let request = Request()
     
     var placesArray = [Place]()
     
 //    var placeMarker: GMSMarker?
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.showsScopeBar = true
+        searchBar.delegate = self
+        
         mapView.delegate = self
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
+        getMyLocation()
+    }
+    
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        let currentLocation = locationManager.location.coordinate
+        let query = searchBar.text
+        requestPlacesNearCoordinate(currentLocation, radius: mapRadius, query: query)
     }
     
     func locationManager(manager: CLLocationManager!, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
@@ -41,6 +56,11 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
             mapView.myLocationEnabled = true
             mapView.settings.myLocationButton = true
             mapView.settings.compassButton = true
+    }
+    
+    func getMyLocation() {
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager.startUpdatingLocation()
     }
     
     func reverseGeocodeCoordinate(coordinate: CLLocationCoordinate2D) {
@@ -67,7 +87,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
             mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
             
             locationManager.stopUpdatingLocation()
-            requestPlaces(location.coordinate)
+//            requestPlaces(location.coordinate)
         }
     }
     
@@ -80,13 +100,14 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
         }
     }
 
-    func requestPlaces(coordinate: CLLocationCoordinate2D) {
-        mapView.clear()
-        requestPlacesNearCoordinate(coordinate, radius: mapRadius)
-        }
+//    func requestPlaces(coordinate: CLLocationCoordinate2D) {
+//        mapView.clear()
+//        requestPlacesNearCoordinate(coordinate, radius: mapRadius, query: searchBar.text)
+//    }
     
-    func requestPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double) {
-        var urlString = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=bars&location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&key=AIzaSyA8Csg82zsqa6msI0czCz8FjiXemYFaZFw"
+    func requestPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double, query: String) {
+        
+        var urlString = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=\(query.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding))bars&location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&key=AIzaSyA8Csg82zsqa6msI0czCz8FjiXemYFaZFw"
         
         if let url = NSURL(string: urlString) {
             if let data = NSData(contentsOfURL: url, options: .allZeros, error: nil) {
