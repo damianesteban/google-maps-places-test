@@ -26,6 +26,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     
     var placesArray = [Place]()
     
+//    var placeMarker: GMSMarker?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         mapView.delegate = self
@@ -81,10 +83,6 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     func requestPlaces(coordinate: CLLocationCoordinate2D) {
         mapView.clear()
         requestPlacesNearCoordinate(coordinate, radius: mapRadius)
-        for place in placesArray {
-                let marker = PlacePin(place: place)
-                marker.map = self.mapView
-            }
         }
     
     func requestPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double) {
@@ -110,9 +108,16 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
             let place = Place(name: name, address: address, latitude: latitude, longitude: longitude, coordinate: coordinate)
             placesArray.append(place)
         }
+        
+        
         for place in placesArray {
             println(place.name)
             println(place.address)
+            var placeMarker = GMSMarker()
+            placeMarker.position = place.coordinate
+            placeMarker.title = place.name
+            placeMarker.map = mapView
+            
         }
     }
 
