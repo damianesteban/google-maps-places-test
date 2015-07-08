@@ -16,7 +16,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     
     let apiKEY = "AIzaSyA8Csg82zsqa6msI0czCz8FjiXemYFaZFw"
     
-    let searchController = GooglePlacesSearchController(apiKey: "AIzaSyA8Csg82zsqa6msI0czCz8FjiXemYFaZFw", placeType: .Establishment)
+    
     
     @IBOutlet weak var mapView: GMSMapView!
     //@IBOutlet weak var searchBar: UISearchBar!
@@ -48,12 +48,12 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        searchController.hidesNavigationBarDuringPresentation = false
-        searchController.dimsBackgroundDuringPresentation = false
-        searchController.searchBar.searchBarStyle = UISearchBarStyle.Minimal
-        searchController.searchBar.delegate = self
-        navigationItem.titleView = searchController.searchBar
+
+//        searchController.hidesNavigationBarDuringPresentation = false
+//        searchController.dimsBackgroundDuringPresentation = false
+//        searchController.searchBar.searchBarStyle = UISearchBarStyle.Prominent
+//        //searchController.searchBar.delegate = self
+//        navigationItem.titleView = searchController.searchBar
         
 //        mapView.addObserver(self, forKeyPath: "myLocation", options: NSKeyValueObservingOptions.New, context: nil)
 //
@@ -66,6 +66,39 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
         getMyLocation()
     }
     
+    @IBAction func showSearchController(sender: UIBarButtonItem) {
+        let searchController = GooglePlacesSearchController(apiKey: "AIzaSyA8Csg82zsqa6msI0czCz8FjiXemYFaZFw", placeType: .Establishment)
+        
+        searchController.didSelectGooglePlace { (place) -> Void in
+            var placeMarker = GMSMarker()
+            
+            // TODO: - Recfactor
+            placeMarker.position = place.coordinate
+            placeMarker.title = place.name
+            placeMarker.snippet = place.formattedAddress
+            placeMarker.appearAnimation = kGMSMarkerAnimationPop
+            placeMarker.flat = true
+            placeMarker.icon = GMSMarker.markerImageWithColor(UIColor(red:0.420, green:0.216,
+                blue:0.510, alpha:1))
+            
+            var bounds: GMSCoordinateBounds = GMSCoordinateBounds()
+    
+            bounds = bounds.includingCoordinate(place.coordinate)
+
+            let cameraUpdate = GMSCameraUpdate.fitBounds(bounds, withPadding: 15.0)
+            self.mapView.animateWithCameraUpdate(cameraUpdate)
+
+            placeMarker.opacity = 0.80
+            placeMarker.map = self.mapView
+            
+            //Dismiss Search
+            searchController.active = false
+        }
+        
+        presentViewController(searchController, animated: true, completion: nil)
+    }
+    
+    // TODO: - Refactor
     var mapRadius: Double {
         get {
             let region = mapView.projection.visibleRegion()
@@ -83,6 +116,18 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
         currentSearch!.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
         requestPlacesNearCoordinate(currentLocation, radius: mapRadius, query: currentSearch!)
     }
+    
+//    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+////        view.bringSubviewToFront(navigationController!.navigationBar)
+//        self.navigationController?.navigationBar.bringSubviewToFront(searchBar)
+//        searchController.didSelectGooglePlace { (place) -> Void in
+//            println(place.description)
+//            
+//            //Dismiss Search
+//            self.searchController.active = false
+//        }
+//
+//    }
     
     func focusMapToShowCurrentMarkers() {
         var bounds: GMSCoordinateBounds = GMSCoordinateBounds()

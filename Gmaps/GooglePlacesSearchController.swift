@@ -172,9 +172,9 @@ public class PlaceDetails: Printable {
 // MARK: - GooglePlacesAutocomplete
 public class GooglePlacesSearchController: UISearchController, UISearchBarDelegate {
     
-    private var gpaViewController: GooglePlacesAutocompleteContainer!
+    var gpaViewController: GooglePlacesAutocompleteContainer!
     
-    private var googleSearchBar: UISearchBar?
+    var googleSearchBar: UISearchBar?
     
     convenience public init(apiKey: String, placeType: PlaceType = .All, searchBar: UISearchBar? = nil, coordinate: CLLocationCoordinate2D = kCLLocationCoordinate2DInvalid, radius: CLLocationDistance = 0) {
         assert(!apiKey.isEmpty, "Provide your API key")

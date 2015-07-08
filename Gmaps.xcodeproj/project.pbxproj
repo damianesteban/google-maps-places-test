@@ -87,13 +87,13 @@
 		5B2E72091B4840A000D184EF /* GoogleMaps */ = {
 			isa = PBXGroup;
 			children = (
-				5B18C5A41B4760FF00A64175 /* MapViewController.swift */,
 				5BFB98E91B48674900C17D53 /* GooglePlace.swift */,
 				5BFB98EC1B489A6E00C17D53 /* GoogleTableViewController.swift */,
 				5BF07C881B49845E007F2C7E /* Request.swift */,
 				5B43803D1B4B4D3700708384 /* PlacePin.swift */,
 				5B43803F1B4B570F00708384 /* Place.swift */,
 				5B4380411B4B592E00708384 /* TestViewController.swift */,
+				5B18C5A41B4760FF00A64175 /* MapViewController.swift */,
 				5B65E52E1B4D8FBF00C27A97 /* GooglePlacesSearchController.swift */,
 			);
 			name = GoogleMaps;
