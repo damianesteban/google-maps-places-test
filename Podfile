@@ -5,6 +5,7 @@ use_frameworks!
 target 'Gmaps' do
   pod 'GoogleMaps'
   pod 'SwiftyJSON'
+  pod 'GooglePlacesSearchController'
 end
 
 target 'GmapsTests' do

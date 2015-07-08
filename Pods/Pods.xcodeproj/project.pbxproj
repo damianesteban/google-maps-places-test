@@ -7,241 +7,299 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A37C0BCCB6D0715A5D218E9 /* Pods-Gmaps-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AEEF0136D9938F1F8AD869 /* Pods-Gmaps-dummy.m */; };
-		5503AE49D435BECBE4CAD20F /* Pods-Gmaps-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4C136D713581906B562A998 /* Pods-Gmaps-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7618E7FC1990E550ADE7E437 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF841FC5F43C4D621F6FCA0 /* Foundation.framework */; };
-		792D9CB25B76397F1DB007D5 /* Pods-Gmaps-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FA357CE341CA58019676DE91 /* Pods-Gmaps-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A9A7F782D5C45B9FD5E8850 /* Pods-Gmaps-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF8ED4B3CABDE4B59D942B6 /* Pods-Gmaps-SwiftyJSON-dummy.m */; };
-		843F120909C1F12F478F3F38 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB4296F7BEAE6FF5C9856F2 /* SwiftyJSON.swift */; };
-		DA6C0D9B9164E68B4651B14A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF841FC5F43C4D621F6FCA0 /* Foundation.framework */; };
+		01AB171DD3364CEBFCE9A569 /* GooglePlacesSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BCC08AC702E4DBA9B7A479 /* GooglePlacesSearchController.swift */; };
+		040F2DD4C0B9491F23C80FE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBAD70C3B0F3BEABC69A42 /* Foundation.framework */; };
+		142393E322B9617C2893BA05 /* Pods-Gmaps-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0060E1EBA1EB5BC85211E6 /* Pods-Gmaps-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		488C8D72C66F1ADC5896DF15 /* Pods-Gmaps-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30FB4E534BCB0C81717D4AA7 /* Pods-Gmaps-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EA4D82ADEE1255460632506 /* Pods-Gmaps-GooglePlacesSearchController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5BD3F0CD697273E07434663 /* Pods-Gmaps-GooglePlacesSearchController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64725143C09CB4B9298AACEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBAD70C3B0F3BEABC69A42 /* Foundation.framework */; };
+		864B9C01E727B26C8FFDF3E4 /* Pods-Gmaps-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C879E418D152E7D958F9B36 /* Pods-Gmaps-dummy.m */; };
+		88EE97417E9269792036545A /* Pods-Gmaps-GooglePlacesSearchController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DECE60014C6D3F25B4C6D77B /* Pods-Gmaps-GooglePlacesSearchController-dummy.m */; };
+		9109D1798AF7EC68C80F836E /* Pods-Gmaps-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 416189498B4D6FB15B7F8A16 /* Pods-Gmaps-SwiftyJSON-dummy.m */; };
+		9F228B2B1453BF2C745E265D /* powered-by-google-on-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 432A697BC5BE91EADD3F9F04 /* powered-by-google-on-white.png */; };
+		B478251E0F357F21FF42FE5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35EBAD70C3B0F3BEABC69A42 /* Foundation.framework */; };
+		E76F0DB065010F606F8302D2 /* powered-by-google-on-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDCC2A6E1B7CBAD5D5B320B1 /* powered-by-google-on-white@2x.png */; };
+		F2CB78C81EF113A699A74D16 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDFC504D395FD89B152CBD9B /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		94538FBE4FDA25FDE29F2EA6 /* PBXContainerItemProxy */ = {
+		63803E8C2213BDA75D8BE461 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1FEFF2D25D021711EDD9A311 /* Project object */;
+			containerPortal = 8F2015CE491EE5524ABF858E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FEA48AC63596419EA7DCCD68;
+			remoteGlobalIDString = 594D627E50519D311F1B3667;
 			remoteInfo = "Pods-Gmaps-SwiftyJSON";
+		};
+		A06C5EEABEBF76B674A55725 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F2015CE491EE5524ABF858E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 672EC29523E02F3562A9A04A;
+			remoteInfo = "Pods-Gmaps-GooglePlacesSearchController";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16B81D3730CE965FB3876655 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		1DB4296F7BEAE6FF5C9856F2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		2199B8C8745421BEA58CA5FE /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24450A181D45AFF74C42FBF4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25A04C98C46DEA0C35161053 /* Pods-Gmaps-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Gmaps-acknowledgements.plist"; sourceTree = "<group>"; };
-		27267425CD2806B6C2E42FC1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28DACA2EC3D8D973E95C441C /* Pods-Gmaps-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Gmaps-resources.sh"; sourceTree = "<group>"; };
-		3E9412E2DD55FDE5E6C0C034 /* Pods-Gmaps-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gmaps-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		45151E08796723F5EF8E9CB7 /* Pods_Gmaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gmaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		59AEEF0136D9938F1F8AD869 /* Pods-Gmaps-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Gmaps-dummy.m"; sourceTree = "<group>"; };
-		5F2D74A147CDD40B2A92C1F0 /* Pods-Gmaps-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Gmaps-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6BB4C46F471FD04848109AC4 /* Pods-Gmaps-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gmaps-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
-		7EAE9729BC9C8479C1139A27 /* Pods-Gmaps-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Gmaps-frameworks.sh"; sourceTree = "<group>"; };
-		8D973E916E8B769936DFAA6A /* Pods-Gmaps-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gmaps-environment.h"; sourceTree = "<group>"; };
-		99BAF751BDDE7B36E42A6884 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		9CC552EC6DE40D3C215C8BBC /* Pods-Gmaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gmaps.debug.xcconfig"; sourceTree = "<group>"; };
-		A4C136D713581906B562A998 /* Pods-Gmaps-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gmaps-umbrella.h"; sourceTree = "<group>"; };
-		BB3231BF129CADAA12AFEB25 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BFF8ED4B3CABDE4B59D942B6 /* Pods-Gmaps-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Gmaps-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		D2B9D6551C6CB6D84AB82EF2 /* Pods-Gmaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gmaps.release.xcconfig"; sourceTree = "<group>"; };
-		D4621A53C5E48D92EBCBD9FF /* Pods-Gmaps-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Gmaps-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
-		E12D4CB177F1AD19D171A8F4 /* Pods-Gmaps.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Gmaps.modulemap"; sourceTree = "<group>"; };
-		E6C78F7B7F9A9188A21D6E2E /* Pods-Gmaps-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gmaps-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
-		ECF841FC5F43C4D621F6FCA0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		FA357CE341CA58019676DE91 /* Pods-Gmaps-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gmaps-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		00851B19B229855325C2CDDA /* Pods-Gmaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gmaps.release.xcconfig"; sourceTree = "<group>"; };
+		02F5C3DF7DFE1B53A5AC588A /* Pods-Gmaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gmaps.debug.xcconfig"; sourceTree = "<group>"; };
+		08E0D833AFEBB14BC4DF6C65 /* Pods-Gmaps-GooglePlacesSearchController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gmaps-GooglePlacesSearchController.xcconfig"; sourceTree = "<group>"; };
+		14B1A174DE236B6381F7D258 /* GooglePlacesSearchController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GooglePlacesSearchController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C3D0F7F06D6DFA74BE3774B /* Pods-Gmaps-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gmaps-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
+		206EDF11C1850C159BD339E0 /* Pods-Gmaps-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gmaps-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
+		30FB4E534BCB0C81717D4AA7 /* Pods-Gmaps-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gmaps-umbrella.h"; sourceTree = "<group>"; };
+		35EBAD70C3B0F3BEABC69A42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		39BCC08AC702E4DBA9B7A479 /* GooglePlacesSearchController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GooglePlacesSearchController.swift; path = Pod/Classes/GooglePlacesSearchController.swift; sourceTree = "<group>"; };
+		416189498B4D6FB15B7F8A16 /* Pods-Gmaps-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Gmaps-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		432A697BC5BE91EADD3F9F04 /* powered-by-google-on-white.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "powered-by-google-on-white.png"; path = "Pod/Assets/powered-by-google-on-white.png"; sourceTree = "<group>"; };
+		485122A6C1C6BFF25BCE62BE /* Pods-Gmaps-GooglePlacesSearchController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gmaps-GooglePlacesSearchController-prefix.pch"; sourceTree = "<group>"; };
+		4AF2D32B0970F61E9EA05DF3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C879E418D152E7D958F9B36 /* Pods-Gmaps-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Gmaps-dummy.m"; sourceTree = "<group>"; };
+		4E23DDE17EBE9A35FBB06627 /* Pods_Gmaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gmaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52081B0A8DD04DA7BC522E0F /* Pods-Gmaps-GooglePlacesSearchController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Gmaps-GooglePlacesSearchController.modulemap"; sourceTree = "<group>"; };
+		5645150FA6B1A09A66BBAB0F /* Pods-Gmaps-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gmaps-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		658E36E71E85E18D4D3D170B /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		7B871824DB433A71049C4DF6 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		8122628B6202E8C38877FA06 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837312AAE9F2C2F310DAB486 /* Pods-Gmaps-GooglePlacesSearchController-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Gmaps-GooglePlacesSearchController-Private.xcconfig"; sourceTree = "<group>"; };
+		89DA02E15DEF3FCE94006694 /* Pods-Gmaps-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Gmaps-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
+		8F0060E1EBA1EB5BC85211E6 /* Pods-Gmaps-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gmaps-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		8F5C22952C255769FEC312D6 /* Pods-Gmaps-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Gmaps-resources.sh"; sourceTree = "<group>"; };
+		A4E588775ED576E7FE287B54 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A562C052AF34908880FC1F66 /* Pods-Gmaps-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gmaps-environment.h"; sourceTree = "<group>"; };
+		A5BD3F0CD697273E07434663 /* Pods-Gmaps-GooglePlacesSearchController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Gmaps-GooglePlacesSearchController-umbrella.h"; sourceTree = "<group>"; };
+		A76067C0A99EAC59D7B72172 /* Pods-Gmaps-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Gmaps-frameworks.sh"; sourceTree = "<group>"; };
+		BA8700F83DFA09783AFBCD4E /* Pods-Gmaps-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Gmaps-acknowledgements.plist"; sourceTree = "<group>"; };
+		BB0475C3A81D3029FFEAA4B0 /* Pods-Gmaps.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Gmaps.modulemap"; sourceTree = "<group>"; };
+		CEE1C6388D20C20F23144DFE /* Pods-Gmaps-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Gmaps-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DECE60014C6D3F25B4C6D77B /* Pods-Gmaps-GooglePlacesSearchController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Gmaps-GooglePlacesSearchController-dummy.m"; sourceTree = "<group>"; };
+		F51D9BCB46C9A48F28A3FE82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5CABDD8ECCDB3DE69840385 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDCC2A6E1B7CBAD5D5B320B1 /* powered-by-google-on-white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "powered-by-google-on-white@2x.png"; path = "Pod/Assets/powered-by-google-on-white@2x.png"; sourceTree = "<group>"; };
+		FDFC504D395FD89B152CBD9B /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B53C14CA0963ED0EF626F32C /* Frameworks */ = {
+		191962677A3C8352AC4B509B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7618E7FC1990E550ADE7E437 /* Foundation.framework in Frameworks */,
+				64725143C09CB4B9298AACEE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C00223422A8CC4836889642E /* Frameworks */ = {
+		773D83707C39CAEF62A434B8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA6C0D9B9164E68B4651B14A /* Foundation.framework in Frameworks */,
+				B478251E0F357F21FF42FE5A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED3D5C94D16B84F5CBE9148 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				040F2DD4C0B9491F23C80FE9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A9030387CA260BCD89700CE /* GoogleMaps */ = {
+		1509F0F7F9FDF7036FDD5EFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				81FA9F9F18CFA9D1E8640B47 /* Frameworks */,
-				5AD8001D5109C9F1F794BB25 /* Resources */,
-			);
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		22FAF963707FE416561CD957 /* Pods-Gmaps */ = {
-			isa = PBXGroup;
-			children = (
-				27267425CD2806B6C2E42FC1 /* Info.plist */,
-				E12D4CB177F1AD19D171A8F4 /* Pods-Gmaps.modulemap */,
-				5F2D74A147CDD40B2A92C1F0 /* Pods-Gmaps-acknowledgements.markdown */,
-				25A04C98C46DEA0C35161053 /* Pods-Gmaps-acknowledgements.plist */,
-				59AEEF0136D9938F1F8AD869 /* Pods-Gmaps-dummy.m */,
-				8D973E916E8B769936DFAA6A /* Pods-Gmaps-environment.h */,
-				7EAE9729BC9C8479C1139A27 /* Pods-Gmaps-frameworks.sh */,
-				28DACA2EC3D8D973E95C441C /* Pods-Gmaps-resources.sh */,
-				A4C136D713581906B562A998 /* Pods-Gmaps-umbrella.h */,
-				9CC552EC6DE40D3C215C8BBC /* Pods-Gmaps.debug.xcconfig */,
-				D2B9D6551C6CB6D84AB82EF2 /* Pods-Gmaps.release.xcconfig */,
-			);
-			name = "Pods-Gmaps";
-			path = "Target Support Files/Pods-Gmaps";
-			sourceTree = "<group>";
-		};
-		250B763DD74113355B44235C = {
-			isa = PBXGroup;
-			children = (
-				BB3231BF129CADAA12AFEB25 /* Podfile */,
-				66FDA855624384DB2CC4F7D0 /* Frameworks */,
-				BE7C1AC62E0F3FAAF11CA183 /* Pods */,
-				FE21FC9F28FDD02F3C77DD0E /* Products */,
-				9204AAC1654BC7C16EA3C99F /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		30A3002DDE8A53960893F8DE /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				ECF841FC5F43C4D621F6FCA0 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		5AD8001D5109C9F1F794BB25 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				99BAF751BDDE7B36E42A6884 /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		66FDA855624384DB2CC4F7D0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				30A3002DDE8A53960893F8DE /* iOS */,
+				658E36E71E85E18D4D3D170B /* GoogleMaps.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		81FA9F9F18CFA9D1E8640B47 /* Frameworks */ = {
+		2E5D89C706C573545C6EA798 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				16B81D3730CE965FB3876655 /* GoogleMaps.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9204AAC1654BC7C16EA3C99F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				22FAF963707FE416561CD957 /* Pods-Gmaps */,
+				ABE63A3E750F098179E784A1 /* Pods-Gmaps */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BB1BECB623BC1BF5223A9494 /* Support Files */ = {
+		4800294B7CA2C116AD7E62C1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				24450A181D45AFF74C42FBF4 /* Info.plist */,
-				D4621A53C5E48D92EBCBD9FF /* Pods-Gmaps-SwiftyJSON.modulemap */,
-				E6C78F7B7F9A9188A21D6E2E /* Pods-Gmaps-SwiftyJSON.xcconfig */,
-				6BB4C46F471FD04848109AC4 /* Pods-Gmaps-SwiftyJSON-Private.xcconfig */,
-				BFF8ED4B3CABDE4B59D942B6 /* Pods-Gmaps-SwiftyJSON-dummy.m */,
-				3E9412E2DD55FDE5E6C0C034 /* Pods-Gmaps-SwiftyJSON-prefix.pch */,
-				FA357CE341CA58019676DE91 /* Pods-Gmaps-SwiftyJSON-umbrella.h */,
+				F51D9BCB46C9A48F28A3FE82 /* Info.plist */,
+				89DA02E15DEF3FCE94006694 /* Pods-Gmaps-SwiftyJSON.modulemap */,
+				206EDF11C1850C159BD339E0 /* Pods-Gmaps-SwiftyJSON.xcconfig */,
+				1C3D0F7F06D6DFA74BE3774B /* Pods-Gmaps-SwiftyJSON-Private.xcconfig */,
+				416189498B4D6FB15B7F8A16 /* Pods-Gmaps-SwiftyJSON-dummy.m */,
+				5645150FA6B1A09A66BBAB0F /* Pods-Gmaps-SwiftyJSON-prefix.pch */,
+				8F0060E1EBA1EB5BC85211E6 /* Pods-Gmaps-SwiftyJSON-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-Gmaps-SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		BE7C1AC62E0F3FAAF11CA183 /* Pods */ = {
+		4CC172E22C07FEDBB2F4EFE4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1A9030387CA260BCD89700CE /* GoogleMaps */,
-				F6E8390B6B2F3B1EBC26A715 /* SwiftyJSON */,
+				432A697BC5BE91EADD3F9F04 /* powered-by-google-on-white.png */,
+				FDCC2A6E1B7CBAD5D5B320B1 /* powered-by-google-on-white@2x.png */,
 			);
-			name = Pods;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		F6E8390B6B2F3B1EBC26A715 /* SwiftyJSON */ = {
+		895BE76D065F16F2DEFEAFF4 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				1DB4296F7BEAE6FF5C9856F2 /* SwiftyJSON.swift */,
-				BB1BECB623BC1BF5223A9494 /* Support Files */,
+				FDFC504D395FD89B152CBD9B /* SwiftyJSON.swift */,
+				4800294B7CA2C116AD7E62C1 /* Support Files */,
 			);
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		FE21FC9F28FDD02F3C77DD0E /* Products */ = {
+		9557B6EC77AF007BCB2BC039 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				45151E08796723F5EF8E9CB7 /* Pods_Gmaps.framework */,
-				2199B8C8745421BEA58CA5FE /* SwiftyJSON.framework */,
+				8122628B6202E8C38877FA06 /* Info.plist */,
+				52081B0A8DD04DA7BC522E0F /* Pods-Gmaps-GooglePlacesSearchController.modulemap */,
+				08E0D833AFEBB14BC4DF6C65 /* Pods-Gmaps-GooglePlacesSearchController.xcconfig */,
+				837312AAE9F2C2F310DAB486 /* Pods-Gmaps-GooglePlacesSearchController-Private.xcconfig */,
+				DECE60014C6D3F25B4C6D77B /* Pods-Gmaps-GooglePlacesSearchController-dummy.m */,
+				485122A6C1C6BFF25BCE62BE /* Pods-Gmaps-GooglePlacesSearchController-prefix.pch */,
+				A5BD3F0CD697273E07434663 /* Pods-Gmaps-GooglePlacesSearchController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-Gmaps-GooglePlacesSearchController";
+			sourceTree = "<group>";
+		};
+		ABDE055F687CD3D87FCF4438 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14B1A174DE236B6381F7D258 /* GooglePlacesSearchController.framework */,
+				4E23DDE17EBE9A35FBB06627 /* Pods_Gmaps.framework */,
+				F5CABDD8ECCDB3DE69840385 /* SwiftyJSON.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		ABE63A3E750F098179E784A1 /* Pods-Gmaps */ = {
+			isa = PBXGroup;
+			children = (
+				4AF2D32B0970F61E9EA05DF3 /* Info.plist */,
+				BB0475C3A81D3029FFEAA4B0 /* Pods-Gmaps.modulemap */,
+				CEE1C6388D20C20F23144DFE /* Pods-Gmaps-acknowledgements.markdown */,
+				BA8700F83DFA09783AFBCD4E /* Pods-Gmaps-acknowledgements.plist */,
+				4C879E418D152E7D958F9B36 /* Pods-Gmaps-dummy.m */,
+				A562C052AF34908880FC1F66 /* Pods-Gmaps-environment.h */,
+				A76067C0A99EAC59D7B72172 /* Pods-Gmaps-frameworks.sh */,
+				8F5C22952C255769FEC312D6 /* Pods-Gmaps-resources.sh */,
+				30FB4E534BCB0C81717D4AA7 /* Pods-Gmaps-umbrella.h */,
+				02F5C3DF7DFE1B53A5AC588A /* Pods-Gmaps.debug.xcconfig */,
+				00851B19B229855325C2CDDA /* Pods-Gmaps.release.xcconfig */,
+			);
+			name = "Pods-Gmaps";
+			path = "Target Support Files/Pods-Gmaps";
+			sourceTree = "<group>";
+		};
+		B80BEA564984DD26506ED81E /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				1509F0F7F9FDF7036FDD5EFF /* Frameworks */,
+				FC9A89F4E3C1686632D979B5 /* Resources */,
+			);
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		BCBB5BF84F1BF36450E49451 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B80BEA564984DD26506ED81E /* GoogleMaps */,
+				BCCD5DCD1ECC13FF849A4FED /* GooglePlacesSearchController */,
+				895BE76D065F16F2DEFEAFF4 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BCCD5DCD1ECC13FF849A4FED /* GooglePlacesSearchController */ = {
+			isa = PBXGroup;
+			children = (
+				39BCC08AC702E4DBA9B7A479 /* GooglePlacesSearchController.swift */,
+				4CC172E22C07FEDBB2F4EFE4 /* Resources */,
+				9557B6EC77AF007BCB2BC039 /* Support Files */,
+			);
+			path = GooglePlacesSearchController;
+			sourceTree = "<group>";
+		};
+		D30A8A1671E04874D8035FB2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				35EBAD70C3B0F3BEABC69A42 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F289D64AA13F9858CE0E9FE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D30A8A1671E04874D8035FB2 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB8DE31C153264D2EC85D557 = {
+			isa = PBXGroup;
+			children = (
+				A4E588775ED576E7FE287B54 /* Podfile */,
+				F289D64AA13F9858CE0E9FE0 /* Frameworks */,
+				BCBB5BF84F1BF36450E49451 /* Pods */,
+				ABDE055F687CD3D87FCF4438 /* Products */,
+				2E5D89C706C573545C6EA798 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		FC9A89F4E3C1686632D979B5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7B871824DB433A71049C4DF6 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1F24D98FC256A2CF7596C52A /* Headers */ = {
+		0392C002598B4CA3594FFAB3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5503AE49D435BECBE4CAD20F /* Pods-Gmaps-umbrella.h in Headers */,
+				488C8D72C66F1ADC5896DF15 /* Pods-Gmaps-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C557D623A1CB62A8797B36D5 /* Headers */ = {
+		07F7508B9EFE831C7E9185A5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				792D9CB25B76397F1DB007D5 /* Pods-Gmaps-SwiftyJSON-umbrella.h in Headers */,
+				4EA4D82ADEE1255460632506 /* Pods-Gmaps-GooglePlacesSearchController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D88B0B0861DB77B816C6B9EA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142393E322B9617C2893BA05 /* Pods-Gmaps-SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4886F6EFEF3FF090B4153D35 /* Pods-Gmaps */ = {
+		594D627E50519D311F1B3667 /* Pods-Gmaps-SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1821D8154B3DFEEADB8A804B /* Build configuration list for PBXNativeTarget "Pods-Gmaps" */;
+			buildConfigurationList = 349760385949AA60267309E3 /* Build configuration list for PBXNativeTarget "Pods-Gmaps-SwiftyJSON" */;
 			buildPhases = (
-				EAA5A45AAB16C36DA52D2C87 /* Sources */,
-				C00223422A8CC4836889642E /* Frameworks */,
-				1F24D98FC256A2CF7596C52A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4215D696BB3C8F801D2A4B39 /* PBXTargetDependency */,
-			);
-			name = "Pods-Gmaps";
-			productName = "Pods-Gmaps";
-			productReference = 45151E08796723F5EF8E9CB7 /* Pods_Gmaps.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FEA48AC63596419EA7DCCD68 /* Pods-Gmaps-SwiftyJSON */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 09030C8C2D36182870273A24 /* Build configuration list for PBXNativeTarget "Pods-Gmaps-SwiftyJSON" */;
-			buildPhases = (
-				736A82FE9E1034CA549554EF /* Sources */,
-				B53C14CA0963ED0EF626F32C /* Frameworks */,
-				C557D623A1CB62A8797B36D5 /* Headers */,
+				161FECF95DD605191D3FF227 /* Sources */,
+				773D83707C39CAEF62A434B8 /* Frameworks */,
+				D88B0B0861DB77B816C6B9EA /* Headers */,
 			);
 			buildRules = (
 			);
@@ -249,186 +307,131 @@
 			);
 			name = "Pods-Gmaps-SwiftyJSON";
 			productName = "Pods-Gmaps-SwiftyJSON";
-			productReference = 2199B8C8745421BEA58CA5FE /* SwiftyJSON.framework */;
+			productReference = F5CABDD8ECCDB3DE69840385 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		672EC29523E02F3562A9A04A /* Pods-Gmaps-GooglePlacesSearchController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16BBBF111233D60000A1038C /* Build configuration list for PBXNativeTarget "Pods-Gmaps-GooglePlacesSearchController" */;
+			buildPhases = (
+				13793245B435442F2248E18B /* Sources */,
+				9ED3D5C94D16B84F5CBE9148 /* Frameworks */,
+				0ED98680C4FA01B708BB4F63 /* Resources */,
+				07F7508B9EFE831C7E9185A5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Gmaps-GooglePlacesSearchController";
+			productName = "Pods-Gmaps-GooglePlacesSearchController";
+			productReference = 14B1A174DE236B6381F7D258 /* GooglePlacesSearchController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		758E6D8E52D4BEE3671ACE48 /* Pods-Gmaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EFD34E6523CF820020CB9EC /* Build configuration list for PBXNativeTarget "Pods-Gmaps" */;
+			buildPhases = (
+				A23E1612E9DDD6EF3CCAAE03 /* Sources */,
+				191962677A3C8352AC4B509B /* Frameworks */,
+				0392C002598B4CA3594FFAB3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A59D3CE537B4901218345AE /* PBXTargetDependency */,
+				863CFCF9ABA47A35EEBBE507 /* PBXTargetDependency */,
+			);
+			name = "Pods-Gmaps";
+			productName = "Pods-Gmaps";
+			productReference = 4E23DDE17EBE9A35FBB06627 /* Pods_Gmaps.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1FEFF2D25D021711EDD9A311 /* Project object */ = {
+		8F2015CE491EE5524ABF858E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 6C7CBF7E0C4F4BC1195FD789 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = B9132794ABD13E827CFB5C8D /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 250B763DD74113355B44235C;
-			productRefGroup = FE21FC9F28FDD02F3C77DD0E /* Products */;
+			mainGroup = FB8DE31C153264D2EC85D557;
+			productRefGroup = ABDE055F687CD3D87FCF4438 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4886F6EFEF3FF090B4153D35 /* Pods-Gmaps */,
-				FEA48AC63596419EA7DCCD68 /* Pods-Gmaps-SwiftyJSON */,
+				758E6D8E52D4BEE3671ACE48 /* Pods-Gmaps */,
+				672EC29523E02F3562A9A04A /* Pods-Gmaps-GooglePlacesSearchController */,
+				594D627E50519D311F1B3667 /* Pods-Gmaps-SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		736A82FE9E1034CA549554EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		0ED98680C4FA01B708BB4F63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A9A7F782D5C45B9FD5E8850 /* Pods-Gmaps-SwiftyJSON-dummy.m in Sources */,
-				843F120909C1F12F478F3F38 /* SwiftyJSON.swift in Sources */,
+				9F228B2B1453BF2C745E265D /* powered-by-google-on-white.png in Resources */,
+				E76F0DB065010F606F8302D2 /* powered-by-google-on-white@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EAA5A45AAB16C36DA52D2C87 /* Sources */ = {
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13793245B435442F2248E18B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A37C0BCCB6D0715A5D218E9 /* Pods-Gmaps-dummy.m in Sources */,
+				01AB171DD3364CEBFCE9A569 /* GooglePlacesSearchController.swift in Sources */,
+				88EE97417E9269792036545A /* Pods-Gmaps-GooglePlacesSearchController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		161FECF95DD605191D3FF227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9109D1798AF7EC68C80F836E /* Pods-Gmaps-SwiftyJSON-dummy.m in Sources */,
+				F2CB78C81EF113A699A74D16 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A23E1612E9DDD6EF3CCAAE03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864B9C01E727B26C8FFDF3E4 /* Pods-Gmaps-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4215D696BB3C8F801D2A4B39 /* PBXTargetDependency */ = {
+		863CFCF9ABA47A35EEBBE507 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Gmaps-SwiftyJSON";
-			target = FEA48AC63596419EA7DCCD68 /* Pods-Gmaps-SwiftyJSON */;
-			targetProxy = 94538FBE4FDA25FDE29F2EA6 /* PBXContainerItemProxy */;
+			target = 594D627E50519D311F1B3667 /* Pods-Gmaps-SwiftyJSON */;
+			targetProxy = 63803E8C2213BDA75D8BE461 /* PBXContainerItemProxy */;
+		};
+		8A59D3CE537B4901218345AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Gmaps-GooglePlacesSearchController";
+			target = 672EC29523E02F3562A9A04A /* Pods-Gmaps-GooglePlacesSearchController */;
+			targetProxy = A06C5EEABEBF76B674A55725 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		17907EC5966CB80D3E027509 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		5438FF7D7BC7418B0C4EBC05 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BB4C46F471FD04848109AC4 /* Pods-Gmaps-SwiftyJSON-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Gmaps-SwiftyJSON/Pods-Gmaps-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Gmaps-SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Gmaps-SwiftyJSON/Pods-Gmaps-SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		77E9AF0038BD69094EFA4009 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2B9D6551C6CB6D84AB82EF2 /* Pods-Gmaps.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Gmaps/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Gmaps/Pods-Gmaps.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Gmaps;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		991F1117BF0918952103C20D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CC552EC6DE40D3C215C8BBC /* Pods-Gmaps.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Gmaps/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Gmaps/Pods-Gmaps.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Gmaps;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BC53C1E8C7B470A3273AF842 /* Debug */ = {
+		0C38F21701670B1239CFE686 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -467,9 +470,37 @@
 			};
 			name = Debug;
 		};
-		DB38EECB81ABE77C18D001A3 /* Debug */ = {
+		13764F5BFF2F287A4B3A55EC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BB4C46F471FD04848109AC4 /* Pods-Gmaps-SwiftyJSON-Private.xcconfig */;
+			baseConfigurationReference = 837312AAE9F2C2F310DAB486 /* Pods-Gmaps-GooglePlacesSearchController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Gmaps-GooglePlacesSearchController/Pods-Gmaps-GooglePlacesSearchController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Gmaps-GooglePlacesSearchController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Gmaps-GooglePlacesSearchController/Pods-Gmaps-GooglePlacesSearchController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GooglePlacesSearchController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2F2B6AEF34C6871F13E67648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C3D0F7F06D6DFA74BE3774B /* Pods-Gmaps-SwiftyJSON-Private.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -495,37 +526,193 @@
 			};
 			name = Debug;
 		};
+		5807717055B8F3AA8CBCD008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6561FFE00DBB98C7F2D6F1CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C3D0F7F06D6DFA74BE3774B /* Pods-Gmaps-SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Gmaps-SwiftyJSON/Pods-Gmaps-SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Gmaps-SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Gmaps-SwiftyJSON/Pods-Gmaps-SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0C235C2C22538F13E91BF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00851B19B229855325C2CDDA /* Pods-Gmaps.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Gmaps/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Gmaps/Pods-Gmaps.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Gmaps;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D257C5E25B49A8F642433688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837312AAE9F2C2F310DAB486 /* Pods-Gmaps-GooglePlacesSearchController-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Gmaps-GooglePlacesSearchController/Pods-Gmaps-GooglePlacesSearchController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-Gmaps-GooglePlacesSearchController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Gmaps-GooglePlacesSearchController/Pods-Gmaps-GooglePlacesSearchController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GooglePlacesSearchController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D891F91E758AC791017B0C84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02F5C3DF7DFE1B53A5AC588A /* Pods-Gmaps.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Gmaps/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-Gmaps/Pods-Gmaps.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Gmaps;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		09030C8C2D36182870273A24 /* Build configuration list for PBXNativeTarget "Pods-Gmaps-SwiftyJSON" */ = {
+		16BBBF111233D60000A1038C /* Build configuration list for PBXNativeTarget "Pods-Gmaps-GooglePlacesSearchController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB38EECB81ABE77C18D001A3 /* Debug */,
-				5438FF7D7BC7418B0C4EBC05 /* Release */,
+				13764F5BFF2F287A4B3A55EC /* Debug */,
+				D257C5E25B49A8F642433688 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1821D8154B3DFEEADB8A804B /* Build configuration list for PBXNativeTarget "Pods-Gmaps" */ = {
+		349760385949AA60267309E3 /* Build configuration list for PBXNativeTarget "Pods-Gmaps-SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				991F1117BF0918952103C20D /* Debug */,
-				77E9AF0038BD69094EFA4009 /* Release */,
+				2F2B6AEF34C6871F13E67648 /* Debug */,
+				6561FFE00DBB98C7F2D6F1CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6C7CBF7E0C4F4BC1195FD789 /* Build configuration list for PBXProject "Pods" */ = {
+		5EFD34E6523CF820020CB9EC /* Build configuration list for PBXNativeTarget "Pods-Gmaps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC53C1E8C7B470A3273AF842 /* Debug */,
-				17907EC5966CB80D3E027509 /* Release */,
+				D891F91E758AC791017B0C84 /* Debug */,
+				D0C235C2C22538F13E91BF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9132794ABD13E827CFB5C8D /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C38F21701670B1239CFE686 /* Debug */,
+				5807717055B8F3AA8CBCD008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1FEFF2D25D021711EDD9A311 /* Project object */;
+	rootObject = 8F2015CE491EE5524ABF858E /* Project object */;
 }
