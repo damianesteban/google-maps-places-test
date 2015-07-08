@@ -17,6 +17,7 @@
 		5B43803E1B4B4D3700708384 /* PlacePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B43803D1B4B4D3700708384 /* PlacePin.swift */; };
 		5B4380401B4B570F00708384 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B43803F1B4B570F00708384 /* Place.swift */; };
 		5B4380421B4B592E00708384 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4380411B4B592E00708384 /* TestViewController.swift */; };
+		5B65E52F1B4D8FBF00C27A97 /* GooglePlacesSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B65E52E1B4D8FBF00C27A97 /* GooglePlacesSearchController.swift */; };
 		5BF07C891B49845E007F2C7E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF07C881B49845E007F2C7E /* Request.swift */; };
 		5BFB98EA1B48674900C17D53 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB98E91B48674900C17D53 /* GooglePlace.swift */; };
 		5BFB98ED1B489A6E00C17D53 /* GoogleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFB98EC1B489A6E00C17D53 /* GoogleTableViewController.swift */; };
@@ -48,6 +49,7 @@
 		5B43803D1B4B4D3700708384 /* PlacePin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacePin.swift; sourceTree = "<group>"; };
 		5B43803F1B4B570F00708384 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		5B4380411B4B592E00708384 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		5B65E52E1B4D8FBF00C27A97 /* GooglePlacesSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesSearchController.swift; sourceTree = "<group>"; };
 		5BF07C881B49845E007F2C7E /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		5BFB98E91B48674900C17D53 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		5BFB98EC1B489A6E00C17D53 /* GoogleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleTableViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				5B43803D1B4B4D3700708384 /* PlacePin.swift */,
 				5B43803F1B4B570F00708384 /* Place.swift */,
 				5B4380411B4B592E00708384 /* TestViewController.swift */,
+				5B65E52E1B4D8FBF00C27A97 /* GooglePlacesSearchController.swift */,
 			);
 			name = GoogleMaps;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B65E52F1B4D8FBF00C27A97 /* GooglePlacesSearchController.swift in Sources */,
 				5BF07C891B49845E007F2C7E /* Request.swift in Sources */,
 				5B43803E1B4B4D3700708384 /* PlacePin.swift in Sources */,
 				5B4380421B4B592E00708384 /* TestViewController.swift in Sources */,

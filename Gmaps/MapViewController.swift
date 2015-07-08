@@ -14,8 +14,12 @@ import SwiftyJSON
 class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManagerDelegate,
     UISearchBarDelegate {
     
+    let apiKEY = "AIzaSyA8Csg82zsqa6msI0czCz8FjiXemYFaZFw"
+    
+    let searchController = GooglePlacesSearchController(apiKey: "AIzaSyA8Csg82zsqa6msI0czCz8FjiXemYFaZFw", placeType: .Establishment)
+    
     @IBOutlet weak var mapView: GMSMapView!
-    @IBOutlet weak var searchBar: UISearchBar!
+    //@IBOutlet weak var searchBar: UISearchBar!
 
     @IBAction func clearMap(sender: UIBarButtonItem) {
         mapView.clear()
@@ -32,10 +36,10 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     
     let locationManager = CLLocationManager()
     var currentSearch: String?
-
+    var nextPageToken: String?
     // let request = Request()
     
-    var placesArray = [Place]()
+    var placesArray = [GooglePlace]()
     // var placeMarker: GMSMarker?
     
     override func viewDidAppear(animated: Bool) {
@@ -45,16 +49,16 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //  searchController.hidesNavigationBarDuringPresentation = false
-        //  searchController.dimsBackgroundDuringPresentation = false
-        //  searchController.searchBar.searchBarStyle = UISearchBarStyle.Minimal
-        //  searchController.searchBar.delegate = self
-        //  navigationItem.titleView = searchController.searchBar
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.searchBarStyle = UISearchBarStyle.Minimal
+        searchController.searchBar.delegate = self
+        navigationItem.titleView = searchController.searchBar
         
 //        mapView.addObserver(self, forKeyPath: "myLocation", options: NSKeyValueObservingOptions.New, context: nil)
-
-        searchBar.showsScopeBar = true
-        searchBar.delegate = self
+//
+//        searchBar.showsScopeBar = true
+//        searchBar.delegate = self
         
         mapView.delegate = self
         locationManager.delegate = self
@@ -67,7 +71,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
             let region = mapView.projection.visibleRegion()
             let verticalDistance = GMSGeometryDistance(region.farLeft, region.nearLeft)
             let horizontalDistance = GMSGeometryDistance(region.farLeft, region.farRight)
-            return max(horizontalDistance, verticalDistance)*0.5
+            return min(horizontalDistance, verticalDistance)*0.5
         }
     }
     
@@ -129,7 +133,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     }
     
     func requestPlacesNearCoordinate(coordinate: CLLocationCoordinate2D, radius: Double, query: String) {
-        var urlString = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=\(query)&location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&key=AIzaSyA8Csg82zsqa6msI0czCz8FjiXemYFaZFw"
+        var urlString = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=\(query)&location=\(coordinate.latitude),\(coordinate.longitude)&radius=\(radius)&key=\(apiKEY)"
         
         if let url = NSURL(string: urlString) {
             if let data = NSData(contentsOfURL: url, options: .allZeros, error: nil) {
@@ -140,14 +144,15 @@ class MapViewController: UIViewController, GMSMapViewDelegate, CLLocationManager
     }
     
     func parseJSON(json: JSON){
-        placesArray = [Place]()
+        
+        placesArray = [GooglePlace]()
         for result in json["results"].arrayValue {
             let name = result["name"].stringValue
             let address = result["formatted_address"].stringValue
             let latitude = result["geometry"]["location"]["lat"].doubleValue
             let longitude = result["geometry"]["location"]["lng"].doubleValue
             let coordinate = CLLocationCoordinate2DMake(latitude, longitude)
-            let place = Place(name: name, address: address, latitude: latitude,
+            let place = GooglePlace(name: name, address: address, latitude: latitude,
                 longitude: longitude, coordinate: coordinate)
             
             placesArray.append(place)

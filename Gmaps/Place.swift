@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-class Place {
+class GooglePlace {
     var name: String
     var address: String
     var latitude: CLLocationDegrees
