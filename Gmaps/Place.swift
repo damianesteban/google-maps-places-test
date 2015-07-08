@@ -16,7 +16,8 @@ class Place {
     var longitude: CLLocationDegrees
     var coordinate: CLLocationCoordinate2D
     
-    init(name: String, address: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees, coordinate: CLLocationCoordinate2D) {
+    init(name: String, address: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees,
+        coordinate: CLLocationCoordinate2D) {
         self.name = name
         self.address = address
         self.latitude = latitude

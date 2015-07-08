@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xPo-8n-KvU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xm9-aY-SQB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -29,6 +29,12 @@
                                             <action selector="refreshPlaces:" destination="xPo-8n-KvU" id="RqP-3o-IuK"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="qEe-gS-ePe"/>
+                                    <barButtonItem image="erase-1" id="Z9z-WN-Neb">
+                                        <connections>
+                                            <action selector="clearMap:" destination="xPo-8n-KvU" id="tkt-Qz-UBM"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <searchBar contentMode="redraw" searchBarStyle="prominent" translatesAutoresizingMaskIntoConstraints="NO" id="I56-Wd-elF">
@@ -48,31 +54,32 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.82745099067687988" green="0.32941177487373352" blue="0.0" alpha="0.63" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="XM1-of-idP" firstAttribute="leading" secondItem="857-6t-uH4" secondAttribute="leadingMargin" id="gSV-XM-nEt"/>
-                                    <constraint firstItem="XM1-of-idP" firstAttribute="trailing" secondItem="857-6t-uH4" secondAttribute="trailingMargin" id="gZV-VK-31U"/>
-                                    <constraint firstItem="XM1-of-idP" firstAttribute="top" secondItem="857-6t-uH4" secondAttribute="top" constant="15" id="lWH-0V-ODA"/>
-                                    <constraint firstItem="XM1-of-idP" firstAttribute="centerY" secondItem="857-6t-uH4" secondAttribute="centerY" id="nTN-W2-Tn2"/>
+                                    <constraint firstItem="XM1-of-idP" firstAttribute="centerY" secondItem="857-6t-uH4" secondAttribute="centerY" id="0xh-JX-cDs"/>
+                                    <constraint firstItem="XM1-of-idP" firstAttribute="leading" secondItem="857-6t-uH4" secondAttribute="leadingMargin" id="6ma-dn-HQq"/>
+                                    <constraint firstItem="XM1-of-idP" firstAttribute="top" secondItem="857-6t-uH4" secondAttribute="top" constant="15" id="KuI-Wy-Li1"/>
+                                    <constraint firstItem="XM1-of-idP" firstAttribute="trailing" secondItem="857-6t-uH4" secondAttribute="trailingMargin" id="ost-qc-osk"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Rv6-Oq-3WY" firstAttribute="bottom" secondItem="IpS-1z-myQ" secondAttribute="top" id="75R-Oi-bpC"/>
-                            <constraint firstItem="I56-Wd-elF" firstAttribute="trailing" secondItem="J9k-UI-RkR" secondAttribute="trailing" id="7Wh-AZ-kL8"/>
-                            <constraint firstItem="857-6t-uH4" firstAttribute="leading" secondItem="I56-Wd-elF" secondAttribute="leading" id="A8w-FZ-2Jf"/>
-                            <constraint firstItem="J9k-UI-RkR" firstAttribute="leading" secondItem="Rv6-Oq-3WY" secondAttribute="leading" id="AnY-d0-wzY"/>
-                            <constraint firstAttribute="trailing" secondItem="Rv6-Oq-3WY" secondAttribute="trailing" id="DyH-pk-Sdh"/>
-                            <constraint firstItem="I56-Wd-elF" firstAttribute="trailing" secondItem="857-6t-uH4" secondAttribute="trailing" id="E7g-SS-ouU"/>
-                            <constraint firstItem="J9k-UI-RkR" firstAttribute="leading" secondItem="I56-Wd-elF" secondAttribute="leading" id="KgA-fX-NWo"/>
-                            <constraint firstItem="J9k-UI-RkR" firstAttribute="trailing" secondItem="Rv6-Oq-3WY" secondAttribute="trailing" id="PkD-Z2-WCz"/>
-                            <constraint firstItem="J9k-UI-RkR" firstAttribute="top" secondItem="I56-Wd-elF" secondAttribute="bottom" id="QwG-2X-SgT"/>
-                            <constraint firstItem="I56-Wd-elF" firstAttribute="top" secondItem="dRH-mg-1Nd" secondAttribute="top" constant="51" id="So1-sZ-H3r"/>
-                            <constraint firstItem="IpS-1z-myQ" firstAttribute="top" secondItem="J9k-UI-RkR" secondAttribute="bottom" constant="43" id="XhH-VO-U9W"/>
-                            <constraint firstItem="857-6t-uH4" firstAttribute="top" secondItem="dRH-mg-1Nd" secondAttribute="top" id="bAP-G1-fuW"/>
-                            <constraint firstItem="I56-Wd-elF" firstAttribute="top" secondItem="857-6t-uH4" secondAttribute="bottom" id="cS4-dQ-aFK"/>
-                            <constraint firstItem="Rv6-Oq-3WY" firstAttribute="leading" secondItem="dRH-mg-1Nd" secondAttribute="leading" id="rg9-Dn-Qbr"/>
+                            <constraint firstItem="J9k-UI-RkR" firstAttribute="top" secondItem="I56-Wd-elF" secondAttribute="bottom" id="1qf-KL-2tT"/>
+                            <constraint firstItem="J9k-UI-RkR" firstAttribute="leading" secondItem="Rv6-Oq-3WY" secondAttribute="leading" id="5ud-p7-7CD"/>
+                            <constraint firstItem="857-6t-uH4" firstAttribute="top" secondItem="dRH-mg-1Nd" secondAttribute="top" id="9hk-Fk-ntV"/>
+                            <constraint firstAttribute="trailing" secondItem="Rv6-Oq-3WY" secondAttribute="trailing" id="9w9-c1-qr3"/>
+                            <constraint firstItem="857-6t-uH4" firstAttribute="trailing" secondItem="I56-Wd-elF" secondAttribute="trailing" id="CQR-Mn-tQa"/>
+                            <constraint firstItem="I56-Wd-elF" firstAttribute="leading" secondItem="857-6t-uH4" secondAttribute="leading" id="DL5-ga-nZG"/>
+                            <constraint firstItem="I56-Wd-elF" firstAttribute="top" secondItem="dRH-mg-1Nd" secondAttribute="top" constant="51" id="G88-cK-b4r"/>
+                            <constraint firstItem="Rv6-Oq-3WY" firstAttribute="bottom" secondItem="IpS-1z-myQ" secondAttribute="top" id="GEu-k4-TFT"/>
+                            <constraint firstItem="I56-Wd-elF" firstAttribute="leading" secondItem="J9k-UI-RkR" secondAttribute="leading" id="SIN-hv-YRq"/>
+                            <constraint firstItem="I56-Wd-elF" firstAttribute="trailing" secondItem="J9k-UI-RkR" secondAttribute="trailing" id="bvh-CS-Jxi"/>
+                            <constraint firstItem="IpS-1z-myQ" firstAttribute="top" secondItem="J9k-UI-RkR" secondAttribute="bottom" constant="43" id="gCB-CH-Ywf"/>
+                            <constraint firstItem="I56-Wd-elF" firstAttribute="top" secondItem="857-6t-uH4" secondAttribute="bottom" id="hw2-ee-ivE"/>
+                            <constraint firstItem="J9k-UI-RkR" firstAttribute="trailing" secondItem="Rv6-Oq-3WY" secondAttribute="trailing" id="pZ1-c8-av7"/>
+                            <constraint firstItem="I56-Wd-elF" firstAttribute="leading" secondItem="dRH-mg-1Nd" secondAttribute="leading" id="wdj-UT-FdA"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6zJ-cI-8ie"/>
                     <connections>
                         <outlet property="addressLabel" destination="XM1-of-idP" id="kxv-kA-D9Y"/>
                         <outlet property="mapView" destination="J9k-UI-RkR" id="5MQ-XR-wkO"/>
@@ -81,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n1c-IT-Nui" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="466"/>
+            <point key="canvasLocation" x="1563" y="466"/>
         </scene>
         <!--Google Table View Controller-->
         <scene sceneID="6qf-yl-eWY">
@@ -143,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yT5-jo-vES" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1416" y="466"/>
+            <point key="canvasLocation" x="2228" y="466"/>
         </scene>
         <!--Test View Controller-->
         <scene sceneID="HJO-xo-swz">
@@ -161,7 +168,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTe-zr-JxR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2208" y="379"/>
+            <point key="canvasLocation" x="3020" y="379"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SjZ-eW-H8z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xm9-aY-SQB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cex-gH-jdD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xPo-8n-KvU" kind="relationship" relationship="rootViewController" id="THk-wq-i8s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lqB-HK-Nm9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="466"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="erase-1" width="25" height="25"/>
+    </resources>
 </document>
